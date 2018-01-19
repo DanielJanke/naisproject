@@ -1,0 +1,31 @@
+$nav-height: 16vh;
+
+.navbar {
+  width: 96vw;
+  height: $nav-height;
+  background-color: khaki;
+  padding: 0 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    font-size: 3rem;
+    line-height: $nav-height;
+  }
+
+  .search {
+    flex: 0 0 20vw;
+    height: $nav-height - 14vh;
+    padding: 3vh;
+    font-size: 1.5rem;
+    border: 0;
+  }
+
+  .search:focus {
+    outline-width: 0;
+    box-shadow: 5px 5px rgba($color: gray, $alpha: 0.2);
+    // border-bottom: 5px solid rgba($color: gray, $alpha: 0.2);
+    // border-right: 5px solid rgba($color: gray, $alpha: 0.2);
+  }
+}
